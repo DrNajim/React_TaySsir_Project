@@ -1,0 +1,259 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.tag {
+    text-align: center;
+}
+.imgslider {
+    margin-top: 3em;
+    width: 5rem;
+    height: 18rem;
+  }
+button{ margin-left: 1em;}
+.navbarcomponent,
+ul,
+.icone-section,
+.nav-icone,
+.TaySsir-prsentation-icone {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: .3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    word-spacing: .1em;
+    flex-wrap: wrap;
+}
+li {
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.3em;
+    color: black;
+  }
+  
+  li:before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+  }
+  
+  li:hover:before {
+    width: 2rem;
+    border-top: solid green ;
+  }
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: black;
+}
+
+.TaySsir-icone {
+    width: 5rem;
+    mix-blend-mode: multiply;
+
+}
+
+.gride-templates {
+    display: grid;
+    grid-template-columns: 15rem 1fr 15rem;
+    grid-template-rows: 25rem repeat(5, 25rem);
+}
+
+.icone-search-section,
+.TaySsir-prsentation-icone {
+    grid-column: span 3;
+    grid-row: 5rem;
+}
+  /* When the input field gets focus, change its width to 100% */
+  .inputsearch:focus {
+    width: 40rem;
+  }
+.inputsearch {
+    display: block;
+    height: 3em;
+    border-right: 2px dashed #d92121;
+    border-left: 2px dashed #d92121;
+    border-radius: 30px;
+    z-index: 1;
+    position: absolute;
+    padding: 1em;
+    margin-top: 4rem;
+    width: 15rem;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+.search-videoflag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: .1em;
+}
+video, .ImageUniversites {
+    position: relative;
+    height: 25rem;
+    width: 100vw;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.icone-section-cercle,
+.icone-section .iconefont {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+.icone-section{
+    margin: 5rem 0 5rem 0;}
+.icone-section .iconefont {
+    width: 15rem;
+    font-size: 3em;
+    color: #028b0e;
+}
+
+.TaySsir-prsentation-icone {
+    margin-top: 1rem;
+    background: url(../public/5268821.jpg);
+   background-position: bottom;
+   background-size: auto;
+    text-justify: distribute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 30px 100px;
+    height: max-content;
+    row-gap: 2rem;
+}
+
+.TaySsir-prsentation{
+    width: 41rem;   
+     margin-right: 3em;
+
+}
+.TaySsir-prsentation h3{
+    font-size: 2em;
+    color: #d92121;
+    margin-bottom: 1em;
+}
+.TaySsir-prsentation p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    
+}
+
+.TaySsir-seconde-icone {
+    width: 20rem;
+    background-color: initial;
+    mix-blend-mode: multiply;
+}
+   .Universite_component{
+    display: flex;
+    justify-content: center;
+   }
+   .Universite_component {
+    border-radius: 30px 100px;
+    background: linear-gradient(270deg, #dfe6df, #e81e08, #23ec19);
+    background-size: 600% 600%;
+
+    background: linear-gradient(157deg, #dfe6df, #a84c42, #6aa567);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    -o-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+   .Universite{
+    display: flex;
+    color: #028b0e;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+    height: 18rem;
+    text-align: center;
+    transition: 1s;
+    background-color: #dddddd;
+    font-size: 18px;
+    transform: scale3d(0.85, 0.85, 1);
+    border-radius: 30px;
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+    margin: 1em;
+
+}
+   .Universite_card{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+height: max-content;
+margin: 5rem;
+width: 80%;
+   }
+  .Universite:hover {
+    transform: none;    
+    border: solid #028b0e;
+
+  }
+  .Universite_detail, .formsignup{
+    display: flex;
+    justify-content: center;
+
+  }
+  .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    border-radius: 30px 100px;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+    .gradient-form {
+      height: 100vh !important;
+    }
+  }
+  @media (min-width: 769px) {
+    .gradient-custom-2 {
+      border-top-right-radius: .3rem;
+      border-bottom-right-radius: .3rem;
+    }
+  }
