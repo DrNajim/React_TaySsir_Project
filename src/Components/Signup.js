@@ -37,14 +37,16 @@ export default function SignUp() {
             placeholder="Enter email"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-3" >
           <label>Password</label>
           <input onChange={(e)=>setnewlist({...setnewuser, password:e.target.value})}
             type={`${typeinput}`}
             className="form-control"
             placeholder="Enter password"
-          /><input type='checkbox' onClick={togglePassword}/><p>Visible password</p>
-        </div>
+          /> 
+            <input style={{marginRight:".3em"}} type='checkbox' onClick={togglePassword}/>
+            <label for="lang1">Check for visible password</label>
+</div>
         <div className="d-grid">
         <Link to='/Signin?success=true' >
           <button  onClick={()=>getUsers(setnewuser)} type="submit" className="btn btn-primary">
