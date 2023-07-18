@@ -2,14 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios';
-
 export default function SignUp() {
   const getUsers = async (setnewuser)=>{
     return axios.post("http://localhost:9000/Signup", setnewuser)
     .then(res => {return res.data})
     .catch(err => console.log(err))}
   const [setnewuser, setnewlist] = useState({ firstname: "", lastname: "", age: "",login: "",password: ""})
-    return (
+  const [typeinput, settype]=useState("password")
+  const togglePassword=(e)=>e.target.checked ?settype("text"):settype("password")
+  return (
         <div className='formsignup'>
       <form style={{width:"40rem"}}>
         <h3>Sign Up</h3>
@@ -36,18 +37,17 @@ export default function SignUp() {
             placeholder="Enter email"
           />
         </div>
-
         <div className="mb-3">
           <label>Password</label>
           <input onChange={(e)=>setnewlist({...setnewuser, password:e.target.value})}
-            type="password"
+            type={`${typeinput}`}
             className="form-control"
             placeholder="Enter password"
-          />
+          /><input type='checkbox' onClick={togglePassword}>Check for visible password</input>
         </div>
         <div className="d-grid">
-        <Link to='/Signin'>
-          <button onClick={()=>getUsers(setnewuser)} type="submit" className="btn btn-primary">
+        <Link to='/Signin?success=true' >
+          <button  onClick={()=>getUsers(setnewuser)} type="submit" className="btn btn-primary">
             Sign Up
           </button></Link>
         </div>

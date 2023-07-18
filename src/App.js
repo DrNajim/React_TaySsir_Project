@@ -29,7 +29,6 @@ function App() {
       <Route path='/Hospitaux' element={<Hospitauxpub/>}/>
       <Route  path='/Signin' element={<Signin/>}/>
       <Route  path='/Signup' element={<SignUp/>}/>
-
       </Routes>
       <Footer/>
       </BrowserRouter>
