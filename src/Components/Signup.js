@@ -43,7 +43,7 @@ export default function SignUp() {
             type={`${typeinput}`}
             className="form-control"
             placeholder="Enter password"
-          /><input type='checkbox' onClick={togglePassword}>Check for visible password</input>
+          /><input type='checkbox' onClick={togglePassword}/>
         </div>
         <div className="d-grid">
         <Link to='/Signin?success=true' >
