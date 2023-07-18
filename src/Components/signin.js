@@ -3,10 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { verifuser } from '../Redux/Reducer/Siginreducer'
-import { ToastContainer, toast } from 'react-toastify';
-import Toastsign from './toastbar'
-import 'react-toastify/dist/ReactToastify.css';
-
 import {
   MDBBtn,
   MDBContainer,
@@ -15,11 +11,6 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit'
 function Signin () {
-  const query = new URLSearchParams(window.location.search);
-const myParam = query.get("success");
-if(myParam === 'true'){
-  toast.success('You have signed up succesfully');
-} 
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const verify = setnewuser => {
@@ -35,7 +26,6 @@ if(myParam === 'true'){
 
   return (
     <MDBContainer className='my-5 gradient-form'>
-                      <Toastsign/>
       <MDBRow>
         <MDBCol col='6' className='mb-5'>
           <div className='d-flex flex-column ms-5'>
