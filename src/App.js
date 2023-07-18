@@ -10,11 +10,9 @@ import Article from './Components/Article';
 import Footer from './Components/Footer';
 import Signin from './Components/signin';
 import SignUp from './Components/Signup';
-import Hospitauxpub from './Components/Hospitaux';
 import ScrollToTop from './Components/scrolltotop';
-import Progress from './Components/progress';
-
-
+import { lazy, Suspense } from 'react';
+const Hospitauxpub = lazy(() => import('./Components/Hospitaux'));
 function App() {
   return (
     <div className="App">
@@ -30,6 +28,11 @@ function App() {
       <Route  path='/Signin' element={<Signin/>}/>
       <Route  path='/Signup' element={<SignUp/>}/>
       </Routes>
+      <Suspense fallback={<Article/>}>
+      <Routes>
+               <Route path="'/Hospitaux'" element={<Hospitauxpub />} />
+               </Routes>
+         </Suspense>
       <Footer/>
       </BrowserRouter>
     </div>
