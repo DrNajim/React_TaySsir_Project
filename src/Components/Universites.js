@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import UniversitePublic from './UniversitePublic'
 import { useState } from 'react'
+import Progress from './progress'
 
 function Universites(){
   const Universities = useSelector(state => state.ListUniversite.Universites)

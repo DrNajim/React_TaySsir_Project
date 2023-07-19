@@ -24,13 +24,12 @@ function App() {
       <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Universites' element={<Universites/>}/>
       <Route path='/UniversiteDetail' element={<UniversiteDetail/>}/>
-      <Route path='/Hospitaux' element={<Hospitauxpub/>}/>
       <Route  path='/Signin' element={<Signin/>}/>
       <Route  path='/Signup' element={<SignUp/>}/>
       </Routes>
       <Suspense fallback={<Article/>}>
       <Routes>
-               <Route path="'/Hospitaux'" element={<Hospitauxpub />} />
+               <Route path='/Hospitaux' element={<Hospitauxpub />} />
                </Routes>
          </Suspense>
       <Footer/>

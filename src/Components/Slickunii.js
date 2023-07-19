@@ -12,7 +12,7 @@ const settings = {
   centerPadding: "5em",
   slidesToShow: 3,
   speed: 500,       
-  slidesToScroll: 3, 
+  slidesToScroll: 1, 
   autoplay: true,
   autoplaySpeed: 1000,
   cssEase: "linear",
