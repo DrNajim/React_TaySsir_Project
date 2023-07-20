@@ -10,10 +10,11 @@ export default function SignUp() {
   const getUsers = async (setnewuser)=>{
     return axios.post("https://tayssir.onrender.com/Signup", setnewuser)
     .then(res => {if(res.data){
-      toast.success('You have signed up succesfully ( going to Sign in)');
-    } 
+      toast.success('You have signed up succesfully ( going to Sign in)'); 
       setTimeout(()=>{ navigate("/Signin") }, 3000);
-      return res.data})
+      return res.data}
+    else {toast.success('You are already signed up (same email) !'); 
+  } })
     .catch(err => console.log(err))}
   const [setnewuser, setnewlist] = useState({ firstname: "", lastname: "", age: "",login: "",password: ""})
   const [typeinput, settype]=useState("password")
