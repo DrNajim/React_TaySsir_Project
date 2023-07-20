@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 export const verifuser = createAsyncThunk("Signin/verifuser", async (setsign)=>{
-    return axios.post("http://localhost:9000/Signin", setsign)
+    return axios.post("https://tayssir.onrender.com/Signin", setsign)
     .then(res => {return res.data})
     .catch(err => console.log(err))
 })

@@ -5,7 +5,7 @@ import axios from 'axios';
 function Contact() {
   const navigate = useNavigate()
   const getContact = async (setnewuser)=>{
-    return axios.post("http://localhost:9000/Contact", setnewuser)
+    return axios.post("https://tayssir.onrender.com/Contact", setnewuser)
     .then(res => {return res.data})
     .then(res => {navigate('/')})
     .catch(err => console.log(err))}

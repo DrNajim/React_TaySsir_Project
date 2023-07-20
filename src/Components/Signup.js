@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function SignUp() {
   const navigate = useNavigate()
   const getUsers = async (setnewuser)=>{
-    return axios.post("http://localhost:9000/Signup", setnewuser)
+    return axios.post("https://tayssir.onrender.com/Signup", setnewuser)
     .then(res => {if(res.data){
       toast.success('You have signed up succesfully ( going to Sign in)');
     } 

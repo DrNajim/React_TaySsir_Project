@@ -7,7 +7,7 @@ function Hospitauxpub(){
     const [listhospitaux, sethoptaux] = useState([])
          const [word, setsearch] = useState("");
 const getList = (async ()=>{
-        return axios.post("http://localhost:9000/Hospitauxpub")
+        return axios.post("https://tayssir.onrender.com/Hospitauxpub")
         .then(res => {return sethoptaux(res.data)})
         .catch(err => console.log(err))
     }) 
