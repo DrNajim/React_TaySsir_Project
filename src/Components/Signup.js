@@ -9,7 +9,8 @@ export default function SignUp() {
   const navigate = useNavigate()
   const getUsers = async (setnewuser)=>{
     return axios.post("https://tayssir.onrender.com/Signup", setnewuser)
-    .then(res => {if(res.data){
+    .then(res => {console.log(res.data)
+      if(res.data){
       toast.success('You have signed up succesfully ( going to Sign in)'); 
       setTimeout(()=>{ navigate("/Signin") }, 3000);
       return res.data}
