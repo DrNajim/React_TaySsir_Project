@@ -11,6 +11,7 @@ const getList = (async ()=>{
         .then(res => {return sethoptaux(res.data)})
         .catch(err => console.log(err))
     }) 
+    console.log(listhospitaux);
     useEffect(()=>{  getList() }, [])
    const filhospitaux= listhospitaux.filter(item => word==="" ? item : item.__3.toLocaleLowerCase().includes(word.toLocaleLowerCase()))
    return (
