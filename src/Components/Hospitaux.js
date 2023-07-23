@@ -42,7 +42,9 @@ HL:	Hôpital Local</h5></div>
         </tr>
       </MDBTableHead>
       {filhospitaux.map(item => (
-      <MDBTableBody>
+      <MDBTableBody data-aos="flip-left"
+      data-aos-duration="ease-out-cubic"
+      data-aos-easing="1000">
         <tr>
           <th scope='row'>{listhospitaux.indexOf(item)}</th>
           <td>{item.__1}</td>

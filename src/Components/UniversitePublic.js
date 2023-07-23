@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom'
 
 function UniversitePublic(props){
   return (
-    <div className='Universite'>
+    <div data-aos="fade-down"
+    data-aos-easing="linear"
+    dat-aos-duration="1500"
+    className='Universite'>
 <div className="card" >
   <img src={props.image} style={{ width:"100%", height:"12rem"}} className="card-img-top" alt="Universite"/>
   <div className="card-body">

@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCodeCompare, faBook,faShieldHalved, faCity, faSchoolFlag} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import SimpleSlider from './Slickunii';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 function Article(){
   return (
     <div>
@@ -28,7 +31,9 @@ function Article(){
               </div>
           </div>
           <div></div>
-        <div className="TaySsir-prsentation-icone">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" className="TaySsir-prsentation-icone">
             <div className="TaySsir-prsentation">
                 <h3> About "TaySsir"</h3>
                 <p>
