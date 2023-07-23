@@ -11,10 +11,10 @@ const settings = {
   infinite: true,
   centerPadding: "5em",
   slidesToShow: 3,
-  speed: 500,       
+  speed: 800,       
   slidesToScroll: 1, 
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed:2000,
   cssEase: "linear",
   responsive: [
     {
