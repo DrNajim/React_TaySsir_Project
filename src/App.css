@@ -80,6 +80,11 @@ p {
   .inputsearch:focus {
     width: 40rem;
   }
+  @media (max-width:768px) {
+    .inputsearch:focus{
+      width: 18rem !important;
+    }
+  }
 .inputsearch {
     display: block;
     height: 3em;
